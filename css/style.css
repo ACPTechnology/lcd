@@ -148,6 +148,9 @@ h1,h2,h3,h3,h5,p{
 .tarjeta{
     margin-bottom: 20px;
 }
+.tarjeta .card{
+    width: 100%;
+}
 
 .lcd_contactos{
     text-align: center;
@@ -162,4 +165,20 @@ h1,h2,h3,h3,h5,p{
 }
 .logos .tarjeta img{
     width: 100%;
+}
+@media(min-width:700px){
+    .cuerpo{
+        padding: 40px !important;
+    }
+}
+
+@media(max-width:700px){
+    .cuerpo{
+        margin-top: 60px !important;
+        width: 90%;
+        margin: auto !important;
+    }
+    .cuerpo .container .h1{
+        padding-top: 70px !important;
+    }
 }
