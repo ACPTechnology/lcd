@@ -1,0 +1,165 @@
+:root{
+    --color1:rgb(99, 170, 227);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:  none !important;
+}
+h1,h2,h3,h3,h5,p{
+    margin:  0 !important;
+    padding: 0 !important;
+}
+
+.header_lcd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: rgb(99, 170, 227);
+    border-bottom: 1px solid rgb(167, 163, 163);
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 1px black;
+}
+.header_lcd h1{
+    font-weight: 999;
+    color: white;
+    font-size: 40px;
+}
+.header_lcd_menu a{
+    padding: 10px;
+    color: white;
+}
+
+.header_lcd_menu a ion-icon{
+    color: white;
+    font-size: 25px;
+    padding-top: 6px;
+    
+}
+
+.header_lcd_menu a ion-icon:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    color: rgb(71, 72, 73);
+}
+
+.btn__susbribirme{
+    padding: 10px;
+    background: rgb(219, 96, 94);
+    color: white;
+    box-shadow: 2px 5px 3px rgb(197, 192, 192);
+}
+.btn__susbribirme:hover{
+    padding: 10px;
+    background: rgb(220, 90, 73);
+    color: rgb(243, 240, 240);
+    box-shadow: 2px 3px 4px rgb(83, 81, 81);
+}
+
+.btn__comosusbribirme{
+    padding: 10px;
+    background: rgb(76, 109, 136);
+    color: white;
+}
+.btn__comosusbribirme:hover{
+    padding: 10px;
+    background: rgb(88, 124, 154);
+    color: rgb(242, 234, 234);
+    box-shadow: 2px 3px 4px rgb(83, 81, 81);
+}
+
+.display-3{
+    font-weight: 333 !important;
+}
+
+.logo:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+  
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+        
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+
+
+
+.footer_lcd{
+    border-top: 1px solid rgb(167, 163, 163);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgb(99, 170, 227);
+    color: aliceblue;
+}
+
+
+.img_scratch{
+    margin: 20px;
+    width: 100px;
+
+}
+
+.lcd_informacion{
+    margin-top: 30px;
+}
+
+.lcd_informacion .card-body{
+    text-align: justify;
+}
+
+
+.lcd_informacion .card{
+    border-top: 5px solid var(--color1);
+}
+
+.tarjeta{
+    margin-bottom: 20px;
+}
+
+.lcd_contactos{
+    text-align: center;
+
+}
+
+.logos{
+    width: 100%;
+
+}
+.logos .tarjeta{
+}
+.logos .tarjeta img{
+    width: 100%;
+}
