@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 a{
     text-decoration:  none !important;
 }
@@ -21,12 +24,13 @@ h1,h2,h3,h3,h5,p{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 70px;
-    background: rgb(99, 170, 227);
-    border-bottom: 1px solid rgb(167, 163, 163);
+    height: 80px;
+    background: var(--color1);
     padding-left: 20px;
     padding-right: 20px;
-    
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 2px 0px 10px rgb(121, 123, 124);
 }
 .logo{
     display: flex;
@@ -58,30 +62,41 @@ h1,h2,h3,h3,h5,p{
     perspective: 1000px;
     color: rgb(71, 72, 73);
 }
+.main_lcd{
+    padding-top: 80px;
+}
+
+
+
 
 .btn__susbribirme{
-    padding: 10px;
-    background: rgb(219, 96, 94);
+    padding: 10px 20px;
+    background: rgb(87, 137, 236);
     color: white;
-    box-shadow: 2px 5px 3px rgb(197, 192, 192);
+    border-radius: 20px;
+    margin-right: 5px;
+    box-shadow: 2px 3px 4px rgb(155, 158, 159);
 }
 .btn__susbribirme:hover{
-    padding: 10px;
-    background: rgb(220, 90, 73);
-    color: rgb(243, 240, 240);
-    box-shadow: 2px 3px 4px rgb(83, 81, 81);
+    background: rgb(42, 117, 208);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 4px rgb(217, 225, 227);
+    animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 .btn__comosusbribirme{
-    padding: 10px;
-    background: rgb(76, 109, 136);
+    padding: 10px 20px;
+    background: rgb(111, 196, 83);
     color: white;
+    border-radius: 20px;
+    margin-left: 5px;
+    box-shadow: 2px 3px 4px rgb(155, 158, 159);
 }
 .btn__comosusbribirme:hover{
-    padding: 10px;
-    background: rgb(88, 124, 154);
-    color: rgb(242, 234, 234);
-    box-shadow: 2px 3px 4px rgb(83, 81, 81);
+    background: rgb(69, 172, 77);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 4px rgb(217, 225, 227);
+    animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 .display-3{
@@ -142,6 +157,7 @@ h1,h2,h3,h3,h5,p{
 
 
 .lcd_informacion .card{
+    box-shadow: 0px 0px 10px rgb(215, 221, 223);
     border-top: 5px solid var(--color1);
 }
 
@@ -150,11 +166,14 @@ h1,h2,h3,h3,h5,p{
 }
 .tarjeta .card{
     width: 100%;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+.tarjeta:hover{
+    animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 .lcd_contactos{
     text-align: center;
-
 }
 
 .logos{
@@ -169,6 +188,7 @@ h1,h2,h3,h3,h5,p{
 @media(min-width:700px){
     .cuerpo{
         padding: 40px !important;
+        
     }
 }
 
@@ -177,8 +197,71 @@ h1,h2,h3,h3,h5,p{
         margin-top: 60px !important;
         width: 90%;
         margin: auto !important;
+        width: 94% !important;
     }
     .cuerpo .container .h1{
         padding-top: 70px !important;
     }
+}
+
+.btn__susbribirme_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.center_table{
+    text-align: center;
+}
+
+thead{
+    background: rgb(199, 220, 239);
+    color: rgb(86, 83, 83);
+}
+
+table{
+    border-radius: 20px !important;
+}
+table tbody tr:hover{
+    animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
+}
+.lcd_auspiciadores{
+    text-align: center;
+}
+
+.fa-trophy{
+    color: rgb(234, 255, 0);
+}
+
+.fa-diagnoses{
+    color: rgb(61, 175, 43);
+}
+
+.fa-sticky-note{
+    color: rgb(113, 156, 170);
+}
+
+.uno{
+    background: rgb(235, 255, 15);
+}
+.dos{
+    background: rgb(9, 236, 88);
+}
+.tres{
+    background: rgb(99, 148, 222);
+}
+
+.item_list{
+    background: rgb(75, 146, 208);
+}
+
+.fa-info-circle{
+    color: rgb(88, 132, 209);
+}
+.fa-project-diagram{
+    color: rgb(97, 119, 95);
+}
+.fa-hand-point-right{
+    color: rgb(85, 84, 84);
 }
